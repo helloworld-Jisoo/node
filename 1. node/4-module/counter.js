@@ -10,5 +10,6 @@ function getCount(){
 
 module.exports.getCount = getCount;
 //module.exports.increase = increase;
+
 exports.increase = increase;
 console.log(module);

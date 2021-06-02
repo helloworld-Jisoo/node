@@ -1,4 +1,5 @@
 const fs = require('fs').promises;
+//! promise -> error handling by using 'catch'
 
 // read a file
 fs.readFile('./text-new.txt', 'utf8')
@@ -25,6 +26,6 @@ fs.copyFile('./text-new.txt', './text-copy.txt')
 fs.mkdir('sub-folder')
 .catch(console.error);
 
- fs.readdir('./')
+fs.readdir('./')
 .then(console.log)
 .catch(console.error);
